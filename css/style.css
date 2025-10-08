@@ -1,0 +1,91 @@
+/* Defines variables for the colours used here. */
+:root{
+	--black:#100;
+	--orange:#960;
+}
+
+/* Turns all text white. */
+*{
+	color: #fff;
+}
+
+/* Remove border from body tag, as well as setting the background to be black-ish. */
+body{
+	margin: 0;
+	background-color: var(--black);
+}
+
+/* Confines main content to smaller box, and has a minimum height.  */
+main{
+	width: 60%;
+	margin: 0 auto;
+	min-height: 360px;
+}
+
+section{
+	margin-bottom: 50px;
+	text-align: justify;
+}
+
+/* Changes background colour of form elements */
+input {
+	background-color: var(--orange);
+	margin-bottom:5px;
+}
+
+/* Changes background colour of form elements */
+select {
+	background-color: var(--orange);
+	margin-bottom:10px;
+}
+
+h1{
+	text-align: center;
+}
+
+/* Makes all elements with the inBox class have an orange background, as well as a bit of padding. */
+.inBox{
+	background-color: var(--orange);
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+/* Extra padding to make the text on the side-by-side links readable. */
+.inBox a {
+	padding-left:20px;
+}
+
+header {
+	margin-bottom:30px;
+}
+
+/*annoyingly nessecary.*/
+.pageTitleContainer{
+	display: flex;
+  	align-items: center;
+  	justify-content: center;
+}
+
+.pageTitle {
+	background-color: var(--orange);
+	padding: 10px;
+	border-radius: 5px;
+	width: max-content;
+}
+
+.aboutImageGallery{
+	display: block;
+	border-radius: 10px;
+	width: 50%;
+	height: 50%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+form{
+	text-align: center;
+}
+
+footer {
+	margin-top:80px;
+}

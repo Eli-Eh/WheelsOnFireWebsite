@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel = "stylesheet" href = "css/style.css">
+    <title>Wheels of Fire</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Wheels of Fire</h1>
+            <hr>
+            <nav class="inBox">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a>Contact Us</a>
+                <a href="search.html"><img style="float: right; width: 20px; margin-left: 0; margin-right: 20px;" src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Search_Icon.svg" alt="Search"></a>
+            </nav>
+            <hr>
+
+            <div class="pageTitleContainer">
+                <h2 class="pageTitle">Contact Us</h2>
+            </div>
+        </header>
+        
+        <main>
+            <content>
+                <h3 style="text-align: center;">Fill Out The Form Below</h3>
+
+                <form id="application-form" action="index.html" method="POST">
+                    <label for="fullname">Full Name</label> <br>
+                    <input type="text" id="fullname" name="fullname" required /> <br>
+
+                    <label for="emailaddress">Email Address</label> <br>
+                    <input type="email" id="emailaddress" name="emailaddress" required /> <br>
+
+                    <label for="phone">Phone Number</label> <br>
+                    <input type="tel" id="phone" name="phone" required /> <br>
+
+                    <label for="countries">Place of Residence</label> <br>
+                    <select id="countries" name="country" required>
+                        <option value="">Select Country</option>
+                        <option value="AF">Afghanistan</option>
+                        <option value="UA">Ukraine</option>
+                        <!-- ehehehehe Illia was here >:D-->
+                        <option value="GB">United Kingdom</option>
+                        <option value="US">United States</option>
+                        <option value="PK">Pakistan</option>
+                    </select>
+                    <br>
+
+                    <input type="reset" value="Reset" />
+                    <input type="submit" value="Submit" />
+                </form>
+            </content>
+        </main>
+
+        <!-- Most of links dont work because we don't have those web pages. 
+        Footer includes contact information, and other not-need-to-know information, and an extra link to the contact page. -->
+        <footer class = "inBox">
+            <ul>
+                <li>Email: johnoreilly@wheelsoffire.com</li>
+                <li>Mailing Address: 63rd Cart Street, Dublin 5</li>
+                <li>Phone Number: +353 819 905 55</li>
+            </ul>
+            <a href="contact.html">Send a ticket</a>
+            <a>Legal</a>
+            <a>Hiring</a>
+        </footer>
+    </div>
+</body>
+</html>
