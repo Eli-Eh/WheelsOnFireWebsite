@@ -4,11 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel = "stylesheet" href = "../css/style.css">
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
-    
     <title>Contact Us</title>
 </head>
 
@@ -17,15 +15,22 @@
         <header>
            <div class = "navBox inBox">
                 <nav>
-                    <a href = "../index.html" class="homeLink">
-                        Wheels
-                        <div class="homeLinkDecoration">on Fire</div>
-                    </a>
-                    <a>Events</a>
-                    <a href="about.html">About</a>
-                    <a>Contact Us</a>
-                </nav>
-            </div>
+          <a href="../index.html" class="homeLink">
+            Wheels
+            <div class="homeLinkDecoration">on Fire</div>
+          </a>
+               
+          <div class="navLinks">
+            <!-- dont looks at this - its ugly -->
+            <button onclick="burgerToggle(toggled);" class="burger" id="burger">
+              <img alt="Expand Navigation" src="../media/Hamburger-menu_-_Delapouite_-_white_-_game-icons.svg" style="width: 20px;">
+            </button>
+            <a class="underBurger" href="events.html">Events</a>
+            <a class="underBurger" href="about.html">About</a>
+            <a class="underBurger" href = "contact.html">Contact Us</a>
+          </div>
+        </nav>
+        </div>
 
             <div class="pageTitleContainer">
                 <h2 class="pageTitle">Contact Us</h2>
@@ -77,5 +82,7 @@
             <a>Hiring</a>
         </footer>
     </div>
+
+    <script src="../scripts/burger.js"></script>
 </body>
 </html>
