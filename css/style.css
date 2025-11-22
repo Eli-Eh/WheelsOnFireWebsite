@@ -7,7 +7,7 @@
 /* Turns all text white. */
 *{
 	color: #fff;
-	font-family: sans-serif;
+	font-family: "Ubuntu Sans", sans-serif;
 }
 
 /* Remove border from body tag, as well as setting the background to be black-ish. */
@@ -191,4 +191,5 @@ footer {
 footer a{
 	margin-left: 30px;
 }
+
 
