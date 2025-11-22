@@ -10,22 +10,111 @@
 	font-family: "Ubuntu Sans", sans-serif;
 }
 
-/* Remove border from body tag, as well as setting the background to be black-ish. */
+/* Adds responsiveness to grid layout in index */
+/*START MEDIA QUERIES*/
+@media only screen and (max-width:600px) {
+	.gallery{
+		grid-template-columns: auto;
+	}
+	.navLinks{
+		display: flex;
+		flex-direction: column;
+		margin-left: auto;
+	}
+	.burger{
+		all:unset;
+	}
+	.homeLink{
+		margin-left: 10px;
+	}
+	.underBurger{
+		display: none;
+		margin-top: 4px;
+		background-color:var(--bgColor);
+		padding: 10px;
+		border-radius: 5px;
+		text-decoration: none;
+	}
+}
+
+@media only screen and (min-width:600px) {
+	.gallery{
+		grid-template-columns: auto;
+	}
+	.burger{
+		display: none;
+	}
+
+	.navLinks{
+		display: flex;
+		flex-direction: row;
+	}
+
+	.homeLink{
+		margin-left: 10px;
+	}
+}
+
+@media only screen and (min-width:992px) {
+	.gallery{
+		grid-template-columns: auto auto;
+	}
+	.homeLink{
+		margin-left: 40px;
+	}
+}
+
+@media only screen and (min-width:1200px) {
+	.gallery{
+		grid-template-columns: auto auto auto;
+	}
+}
+/*END MEDIA QUERIES*/
+
+/* Remove border from body tag, as well as setting the background to be a gradient :o */
 body{
 	margin: 0;
 	background-color: var(--bgColor);
+	background: linear-gradient(0deg, var(--blockColor) 0%, var(--bgColor) 15%);
 }
 
 /* Confines main content to smaller box, and has a minimum height.  */
 main{
 	width: 70%;
+	min-height: 1vh;
 	margin: 0 auto;
-	min-height: 360px;
+	
 }
 
 section{
 	margin-bottom: 50px;
 	text-align: justify;
+}
+
+/* Makes all elements with the inBox class have an orange background, as well as a bit of padding. */
+.inBox{
+	background-color: var(--blockColor);
+	padding-top: 10px;
+	padding-bottom: 5px;
+}
+
+nav {
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	width:auto;
+	padding: 10px;
+}
+
+nav a {
+	vertical-align: middle;
+	font-size: 1rem;
+	margin-left: 30px;
+}
+
+.burger{
+	margin-left:auto;
+	margin-right: 10px;
 }
 
 .homeLink {
@@ -35,46 +124,28 @@ section{
   text-decoration: none;
   color: orange;
   font-weight: bold;
-  margin-left: 40px;
   padding: 5px;
   border: 20px;
   background-color:rgb(40, 62, 89);
   border-radius: 10px;
-
+  word-wrap: none;
 }
+
 .homeLinkDecoration{
   color: white;
+  font-size: 1.5rem;
   font-weight:400;
   margin:0;
   margin-left: 6px;
-}
-
-
-
-/* Makes all elements with the inBox class have an orange background, as well as a bit of padding. */
-.inBox{
-	background-color: var(--blockColor);
-	padding-top: 10px;
-	padding-bottom: 5px;
-}
-
-nav{
-	display: flex;
-	align-items: center;
-	justify-content: left;
-	flex-direction: row;
-	width:auto;
-	padding: 10px;
-}
-
-nav * {
-	vertical-align: middle;
-	margin-left: 30px;
+  word-wrap: none;
+  overflow: hidden;
 }
 
 header {
 	margin-bottom:30px;
 }
+
+
 
 /* Makes page title go to center. annoyingly nessecary. */
 .pageTitleContainer{
@@ -108,7 +179,7 @@ header {
   padding: 12px 16px;
   font-size: 1rem;
   max-width: 100%;
-  border-radius: 8px;
+  border-radius: 5px;
 }
 
 .sizecar{
@@ -116,26 +187,24 @@ header {
 }
 
 .gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    padding: 20px;
+  display: grid;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .card{
-  background-color: rgb(253, 253, 255);
+  background-color: white;
+  padding: 15px;
   border-radius: 10px;
-  width: 500px;
-  height: 500px;
   border: 5px solid #053530;
   transition: scale 0.5s ease 0s;
 }
 
 .card img{
   width: 80%;
-  height: 50%;
-  margin: 20px;
+  aspect-ratio: 3/2;
+  border: 5px solid #053530;
 }
 
 .card:hover{
@@ -172,6 +241,21 @@ input {
 	padding: 4px;
 }
 
+input[type="submit"] {
+	margin-left: 5px;
+	padding: 8px;
+	background-color: #a3ff86;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
+input[type="reset"] {
+	padding: 8px;
+	background-color: #ff8585;
+	font-size: 12pt;
+	font-weight: bold;
+}
+
 /* Changes background colour of form elements and removes their borders :P */
 select {
 	background-color: white;
@@ -189,6 +273,3 @@ footer {
 footer a{
 	margin-left: 30px;
 }
-
-
-
