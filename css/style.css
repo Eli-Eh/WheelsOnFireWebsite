@@ -14,7 +14,6 @@
 body{
 	margin: 0;
 	background-color: var(--bgColor);
-	background: linear-gradient(180deg,var(--bgColor) 85%, var(--blockColor) 100%);
 }
 
 /* Confines main content to smaller box, and has a minimum height.  */
@@ -92,16 +91,6 @@ header {
 }
 
 /*INDEX ONLY*/
-.site-header {
-    background-color: rgb(5, 53, 48);
-    color: #fff;
-    padding:  10px ;
-}
-
-.card-body *{
-  color: black;
-}
-
 .container{
   text-align: center;
   margin-top: 50px;
@@ -140,12 +129,21 @@ header {
   width: 500px;
   height: 500px;
   border: 5px solid #053530;
+  transition: scale 0.5s ease 0s;
 }
 
 .card img{
   width: 80%;
   height: 50%;
   margin: 20px;
+}
+
+.card:hover{
+	scale: 1.025;
+}
+
+.card-body *{
+  color: black;
 }
 
 .about{
