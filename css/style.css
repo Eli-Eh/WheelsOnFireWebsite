@@ -84,7 +84,7 @@ body{
 main{
 	width: 70%;
 	margin: 0 auto;
-	
+	margin-bottom: 120px;
 }
 
 section{
@@ -286,5 +286,6 @@ footer {
 footer a{
 	margin-left: 30px;
 }
+
 
 
