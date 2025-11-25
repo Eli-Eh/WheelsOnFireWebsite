@@ -135,6 +135,7 @@ nav a {
   border: 20px;
   background-color:rgb(40, 62, 89);
   border-radius: 10px;
+  padding: 3px;
   word-wrap: none;
 }
 
@@ -222,15 +223,6 @@ header {
   color: black;
 }
 
-.tag{
-  display: inline-block;
-  background: #ff6600;
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  font-size: 13px;
-}
-
 .about{
   background-color: #27600B;
   margin: 100px 100px;
@@ -242,6 +234,16 @@ header {
   margin-right: auto;
 }
 /*END INDEX ONLY*/
+
+.tag
+{
+  display: inline-block;
+  background: #ff6600;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+}
 
 form{
 	text-align: center;
@@ -284,7 +286,7 @@ select {
 
 footer {
 	width: 100%;
-	margin-top: 20px;
+	margin-top: auto;
 	position: absolute;
 	bottom: 0;
 }
@@ -292,7 +294,3 @@ footer {
 footer a{
 	margin-left: 30px;
 }
-
-
-
-
