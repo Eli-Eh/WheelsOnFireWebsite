@@ -74,14 +74,15 @@
 /* Remove border from body tag, as well as setting the background to be a gradient :o */
 body{
 	margin: 0;
+	min-height: 100vh;
 	background-color: var(--bgColor);
 	background: linear-gradient(0deg, var(--blockColor) 0%, var(--bgColor) 15%);
+	position: relative;
 }
 
 /* Confines main content to smaller box, and has a minimum height.  */
 main{
 	width: 70%;
-	min-height: 1vh;
 	margin: 0 auto;
 	
 }
@@ -276,10 +277,14 @@ select {
 }
 
 footer {
-	margin-top:80px;
+	width: 100%;
+	margin-top: 20px;
+	position: absolute;
+	bottom: 0;
 }
 
 footer a{
 	margin-left: 30px;
 }
+
 
