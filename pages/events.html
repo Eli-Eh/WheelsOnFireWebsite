@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel = "stylesheet" href = "../css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
+  <title>Events</title>
+</head>
+<body>
+  <div class="wrapper">
+    <header>
+        <!-- This is the navigation box. Check style page for description of inBox class. -->
+      <div class = "navBox inBox">
+        <nav>
+          <a href="../index.html" class="homeLink">
+            Wheels
+            <div class="homeLinkDecoration">on Fire</div>
+          </a>
+               
+          <div class="navLinks">
+            <button onclick="burgerToggle(toggled);" class="burger" id="burger">
+              <img alt="Expand Navigation" src="../media/Hamburger-menu_-_Delapouite_-_white_-_game-icons.svg" style="width: 20px;">
+            </button>
+            <a class="underBurger" href="events.html">Events</a>
+            <a class="underBurger" href="about.html">About</a>
+            <a class="underBurger" href = "contact.html">Contact Us</a>
+          </div>
+        </nav>
+      </div>
+
+      <div class="pageTitleContainer">
+        <h2 class="pageTitle">Events</h2>
+      </div>
+    </header>
+
+    <main id="gallery" class="container gallery" style="margin-top: 0;">
+      <article class="card">
+        <h3 class="card-title">Car Meet-Up</h3>
+        <div class="info">Friday 7:00 PM @ Wheels of Fire Car Park</div>
+        <p class="desc">A relaxed meet with builds on display, music and refreshments.</p>
+        <span class="tag">Car Meet</span>
+      </article>
+
+      <article class="card">
+        <h3 class="card-title">Second Hand Car Market</h3>
+        <div class="info">Next Week (Mon-Fri)</div>
+        <p class="desc">Looking to sell a car or buy one second hand? We have arranged a meetup for people to do just that!</p>
+        <span class="tag">Special Offer</span>
+      </article>
+
+      <article class="card">
+        <h3 class="card-title">Performance Test Drive Day</h3>
+        <div class="info">Saturday 10AM - 4PM</div>
+        <p class="desc">Test drive our most popular performance models with the team.</p>
+        <span class="tag">Available Soon</span>
+      </article>
+
+      <article class="card">
+        <h3 class="card-title">Car Detailing Demo</h3>
+        <div class="info">Sunday 11AM @ Showroom</div>
+        <p class="desc">Learn washing, polishing and protection tips from experts.</p>
+        <span class="tag">Workshop</span>
+      </article>
+  </main>
+
+  <footer id="contact" class="inBox">
+      <ul>
+          <li>Email: johnoreilly@wheelsonfire.com</li>
+          <li>Mailing Address: 63rd Cart Street, Dublin 5</li>
+          <li>Phone Number: +353 819 905 55</li>
+      </ul>
+      <a href="./pages/contact.html">Send a ticket</a>
+      <a>Legal</a>
+      <a>Hiring</a>
+  </footer>
+
+  <script src="../scripts/burger.js"></script>
+</body>
+</html>
