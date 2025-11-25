@@ -211,8 +211,17 @@ header {
 	scale: 1.025;
 }
 
-.card-body *{
+.card *{
   color: black;
+}
+
+.tag{
+  display: inline-block;
+  background: #ff6600;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 13px;
 }
 
 .about{
@@ -273,3 +282,4 @@ footer {
 footer a{
 	margin-left: 30px;
 }
+
