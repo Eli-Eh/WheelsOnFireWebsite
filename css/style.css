@@ -265,6 +265,7 @@ input[type="submit"] {
 	background-color: #a3ff86;
 	font-size: 12pt;
 	font-weight: bold;
+	margin-bottom:40px;
 }
 
 input[type="reset"] {
@@ -272,6 +273,7 @@ input[type="reset"] {
 	background-color: #ff8585;
 	font-size: 12pt;
 	font-weight: bold;
+	margin-bottom:40px;
 }
 
 /* Changes background colour of form elements and removes their borders :P */
@@ -282,6 +284,15 @@ select {
 	border: 5px solid #053530;
 	border-radius: 8px;
 	padding: 4px;
+}
+
+textarea {
+	background-color: white;
+	border: 5px solid #053530;
+	color: black;
+	margin-bottom:5px;
+	border-radius: 8px;
+	padding: 1%;
 }
 
 footer {
