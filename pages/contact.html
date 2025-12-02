@@ -41,27 +41,26 @@
             <content>
                 <h3 style="text-align: center;">Fill Out The Form Below</h3>
 
-                <form id="application-form" action="index.html" method="POST">
-                    <label for="fullname">Full Name</label> <br>
-                    <input type="text" id="fullname" name="fullname" required /> <br>
+                <form name="contactform" onsubmit="return validate();" action="index.html" method="POST">
+                    <label for="firstname">First Name</label> <br>
+                    <input type="text" id="firstname" name="firstname" required /> <br>
+
+                    <label for="lastname">Last Name</label> <br>
+                    <input type="text" id="lastname" name="lastname" required /> <br>
 
                     <label for="emailaddress">Email Address</label> <br>
                     <input type="email" id="emailaddress" name="emailaddress" required /> <br>
 
-                    <label for="phone">Phone Number</label> <br>
-                    <input type="tel" id="phone" name="phone" required /> <br>
-
-                    <label for="countries">Place of Residence</label> <br>
-                    <select id="countries" name="country" required>
-                        <option value="">Select Country</option>
-                        <option value="AF">Afghanistan</option>
-                        <option value="UA">Ukraine</option>
-                        <!-- ehehehehe Illia was here >:D-->
-                        <option value="GB">United Kingdom</option>
-                        <option value="US">United States</option>
-                        <option value="PK">Pakistan</option>
+                    <label for="reason">Reason For Inquiry</label> <br>
+                    <select id="reason" name="reason" required>
+                        <option value="">Select Reason</option>
+                        <option value="feedback">General Feedback</option>
+                        <option value="techsupport">Technical Support</option>
                     </select>
-                    <br>
+					<br>
+
+					<label for="message">Message</label> <br>
+                    <textarea id="message" name="message" required></textarea> <br>
 
                     <input type="reset" value="Reset" />
                     <input type="submit" value="Submit" />
@@ -77,12 +76,13 @@
                 <li>Mailing Address: 63rd Cart Street, Dublin 5</li>
                 <li>Phone Number: +353 819 905 55</li>
             </ul>
-            <a href="./pages/contact.html">Send a ticket</a>
+            <a href="contact.html">Send a ticket</a>
             <a>Legal</a>
             <a>Hiring</a>
         </footer>
     </div>
 
     <script src="../scripts/burger.js"></script>
+    <script src="../scripts/contactValidation.js"></script>
 </body>
 </html>
