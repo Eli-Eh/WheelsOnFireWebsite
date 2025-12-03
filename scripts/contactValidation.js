@@ -30,9 +30,6 @@ function validate()
 		else if (reason == "techsupport"){
 			alert("We will email you shortly.");
 		}
-
-		alert(isAlpha(firstName));
-
 		// redirect to home page
 		document.location = '../index.html';
 		// alert is here because there is once again, a ghost in the code D:
