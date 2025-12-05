@@ -238,8 +238,9 @@ header {
 .tag
 {
   display: inline-block;
-  background: #ff6600;
+  background: #E02D00;
   color: white;
+  font-weight: bold;
   padding: 5px 10px;
   border-radius: 5px;
   font-size: 13px;
@@ -305,3 +306,4 @@ footer {
 footer a{
 	margin-left: 30px;
 }
+
