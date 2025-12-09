@@ -33,7 +33,8 @@ function validate()
 		// redirect to home page
 		document.location = '../index.html';
 		// alert is here because there is once again, a ghost in the code D:
-		alert("wtf");
+		// i think it shows up on chromium browsers, and gets interupted in firefox based browsers
+		alert("Now sending you to home page.");
 		return true;
 	}
 }
