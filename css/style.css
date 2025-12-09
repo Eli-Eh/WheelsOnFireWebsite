@@ -1,6 +1,6 @@
 /* Defines variables for the colours used here. */
 :root{
-	--bgColor:#526f5c;
+	--bgColor:#425F4C;
 	--blockColor:#053530;
 }
 
@@ -306,4 +306,5 @@ footer {
 footer a{
 	margin-left: 30px;
 }
+
 
